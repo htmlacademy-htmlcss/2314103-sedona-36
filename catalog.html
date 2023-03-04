@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="main-page">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -34,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -104,8 +106,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <button class="button apply-button" type="submit">Применить</button>
+            <button class="button reset-button" type="reset">Сбросить</button>
           </form>
         </section>
       </div>
@@ -122,7 +124,7 @@
           </select>
           <ul class="view">
             <li class="view-item">
-              <a class="view-button button-outline" href="#">
+              <a class="view-button outline-button" href="#">
                 <span class="visually-hidden">Показать карточки.</span>
               </a>
             </li>
@@ -146,8 +148,8 @@
             </a>
             <span class="hotel-card-text">Гостиница</span>
             <b class="hotel-card-price">От 4000 ₽</b>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-favorites button" type="submit">В избранное</button>
+            <a class="button hotel-card-button" href="#">Подробнее</a>
+            <button class="button hotel-card-favorites" type="button">В избранное</button>
             <p class="hotel-card-star stars-four">
               <span class="visually-hidden">4 звезды.</span>
             </p>
@@ -161,7 +163,7 @@
             <span class="hotel-card-text">Гостиница</span>
             <b class="hotel-card-price">От 5000 ₽</b>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="added-to-favorites hotel-card-favorites button" type="submit">В избранном</button>
+            <button class="added-to-favorites button" type="button">В избранном</button>
             <p class="hotel-card-star stars-four">
               <span class="visually-hidden">4 звезды.</span>
             </p>
@@ -175,7 +177,7 @@
             <span class="hotel-card-text">Гостиница</span>
             <b class="hotel-card-price">От 2500 ₽</b>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-favorites button" type="submit">В избранное</button>
+            <button class="hotel-card-favorites button" type="button">В избранное</button>
             <p class="hotel-card-star stars-three">
               <span class="visually-hidden">3 звезды.</span>
             </p>
@@ -189,7 +191,7 @@
             <span class="hotel-card-text">Гостиница</span>
             <b class="hotel-card-price">От 1500 ₽</b>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-favorites button" type="submit">В избранное</button>
+            <button class="hotel-card-favorites button" type="button">В избранное</button>
             <p class="hotel-card-star stars-two">
               <span class="visually-hidden">2 звезды.</span>
             </p>
@@ -220,49 +222,41 @@
           </li>
         </ul>
       </section>
-      <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscription catalog-subscription">
+        <h2 class="subscription-title catalog-subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-text catalog-subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscription-form-email">
             <label class="visually-hidden" for="subscription-email">Email</label>
             <input class="subscription-input" type="text" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
           </p>
-          <button class="subscription-button" type="submit">Подписаться</button>
+          <button class="button subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте.</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contacts">
-        <h2 class="visually-hidden">Контактный телефон</h2>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
-      <div class="footer-link">
-        <h2 class="visually-hidden">Ссылка на академию</h2>
-        <a class="footer-logo" href="#">
-          <img class="footer-logo" src="images/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
-        </a>
-      </div>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button social-button" href="#">
+            <span class="visually-hidden">ВКонтакте.</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button social-button" href="#">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button social-button" href="#">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="#">
+        <img class="footer-logo" src="images/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
+      </a>
     </footer>
+  </div>
   </body>
 </html>
