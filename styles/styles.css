@@ -79,6 +79,7 @@ img {
   margin: 0 auto;
 }
 .hero-block {
+  padding: 51px 371px 82px;
   color: #ffffff;
   background-color: #3d739d;
   background-image: url("../images/hero-background.jpg");
