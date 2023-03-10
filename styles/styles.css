@@ -315,14 +315,24 @@ img {
   align-items: center;
 }
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   width: 142px;
   list-style-type: none;
+}
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 .social-button {
   color: #83b3d3;
   background-color: transparent;
 }
 .contacts-phone {
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -339,6 +349,7 @@ img {
   margin: 0 auto;
 }
 .hotel-header-with-filters {
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-color: #3d739d;
   background-image: url("../images/filters-background.jpg");
@@ -346,11 +357,22 @@ img {
   background-repeat: no-repeat;
 }
 .hotel-header-title {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
+.breadcrumbs {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+  display: flex;
+  list-style-type: none;
+}
 .breadcrumbs-link {
+  display: block;
+  margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
   color: inherit;
@@ -371,7 +393,16 @@ img {
 .reset-button {
   background-color: transparent;
 }
+.hotel-catalog {
+  padding: 50px 70px 60px;
+}
+.hotel-catalog-sorting {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
 .sorting-result {
+  margin: 0 201px 0 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -384,16 +415,35 @@ img {
   line-height: 21px;
   color: inherit;
 }
+.view {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
+.view-item {
+  width: 48px;
+  height: 48px;
+}
 .view-button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   color: #000000;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   text-decoration: none;
 }
+
 .outline-button {
   border-color: #000000;
 }
-
+.hotel-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .hotel-card-link {
   text-decoration: none;
 }
@@ -427,7 +477,22 @@ img {
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  border-radius: 4px;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
